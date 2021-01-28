@@ -1,3 +1,11 @@
 main:
+  - title: "A-Level"
+    url: /alevel/
+  - title: "Android"
+    url: /android/
+  - title: "Linux"
+    url: /linux/
+  - title: "Python"
+    url: /python/
   - title: "About"
     url: /about/
