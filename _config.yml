@@ -81,6 +81,20 @@ footer:
       icon: "fab fa-fw fa-telegram"
       url: "https://t.me/antiquack"
 
+collections:
+  alevel:
+    output: true
+    permalink: /:collection/:path/
+  android:
+    output: true
+    permalink: /:collection/:path/
+  linux:
+    output: true
+    permalink: /:collection/:path/
+  python:
+    output: true
+    permalink: /:collection/:path/
+
 defaults:
   # _posts
   - scope:
@@ -100,6 +114,42 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # _alevel
+  - scope:
+      path: ""
+      type: alevel
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      toc: true
+  # _android
+  - scope:
+      path: ""
+      type: android
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      toc: true
+  # _linux
+  - scope:
+      path: ""
+      type: linux
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      toc: true
+  # _python
+  - scope:
+      path: ""
+      type: python
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      toc: true
 
 category_archive:
   type: liquid
