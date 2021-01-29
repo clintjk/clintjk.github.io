@@ -1,6 +1,7 @@
 ---
 title: "APK Library"
 excerpt: "A Collection of useful android apps"
+toc: false
 ---
 | Application   | Changes | Download|
 | ------        | ------- | ----- |
