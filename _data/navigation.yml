@@ -9,3 +9,95 @@ main:
     url: /python/
   - title: "About"
     url: /about/
+
+maths:
+  - title: Pure 1
+    children:
+      - title: "Proof"
+        url: /
+      - title: "Indices and Surds"
+        url: /
+      - title: "Quadratics"
+        url: /
+      - title: "Polynmials"
+        url: /
+      - title: "Graphs and Functions"
+        url: /
+      - title: "Straight Lines"
+        url: /
+      - title: "Circles"
+        url: /
+      - title: "Exponentials and Logarithms"
+        url: /
+      - title: "Binomial Expansion"
+        url: /
+      - title: "Trigonometry"
+        url: /
+      - title: "Vectors"
+        url: /
+      - title: "Differentiation"
+        url: /
+      - title: "Integration"
+        url: /
+  - title: Mechanics 1
+    children:
+      - title: "Kinematics"
+        url: /
+      - title: "Forces and Motion"
+        url: /
+      - title: "Connected Particles"
+        url: /
+  - title: Statistics 1
+    children:
+      - title: "Sampling"
+        url: /
+      - title: "Statistical Diagrams"
+        url: /
+      - title: "Measures of Location and Spread"
+        url: /
+      - title: "Correlation and Regression"
+        url: /
+      - title: "Discrete Random Variables"
+        url: /
+      - title: "Hypothesis Testing"
+        url: /
+  - title: Pure 2
+    children:
+      - title: "Sequences and Series"
+        url: /
+      - title: "Rational Functions and Partial Fractions"
+        url: /
+      - title: "General Binomial Expansion"
+        url: /
+      - title: "Functions"
+        url: /
+      - title: "Trigonometry"
+        url: /
+      - title: "Differentiation"
+        url: /
+      - title: "Integration"
+        url: /
+      - title: "Proof"
+        url: /
+      - title: "Parametric Equations"
+        url: /
+      - title: "Numerical Methods"
+        url: /
+      - title: "Vectors"
+        url: /
+  - title: Mechanics 2
+    children:
+      - title: "Kinematics"
+        url: /
+      - title: "Forces and Motion"
+        url: /
+      - title: "Moments"
+        url: /
+  - title: Statistics 2
+    children:
+      - title: "Conditional Probability"
+        url: /
+      - title: "Normal Distribution"
+        url: /
+      - title: "Correlation and Regression"
+        url: /
