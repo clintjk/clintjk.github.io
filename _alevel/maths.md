@@ -6,6 +6,8 @@ header:
   caption: "Pexels"
   teaser: assets/images/maths_thumb.jpg
 toc: false
+sidebar:
+  nav: "maths"
 ---
 
 ## Trigonometry
