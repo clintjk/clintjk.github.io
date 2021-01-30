@@ -14,7 +14,7 @@ maths:
   - title: Pure 1
     children:
       - title: "Proof"
-        url: /
+        url: /alevel/maths/#trigonometry
       - title: "Indices and Surds"
         url: /
       - title: "Quadratics"
