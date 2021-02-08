@@ -2,8 +2,7 @@
 title: "A-Level"
 layout: collection
 permalink: /alevel/
-header:
-  overlay_color: "#333"
+
 intro: 
   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tinc'
 
