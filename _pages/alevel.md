@@ -6,6 +6,9 @@ collection: alevel
 entries_layout: grid
 classes: wide
 
+intro: 
+  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tinc'
+
 feature_row:
   - image_path: /assets/images/maths_thumb.jpg
     alt: "Maths"
@@ -21,4 +24,7 @@ feature_row:
     btn_class: "btn--inverse"
 
 ---
+
+{% include feature_row id="intro" type="center" %}
+
 {% include feature_row %}
