@@ -1,6 +1,6 @@
 ---
 title: "A-Level"
-layout: splash
+layout: collection
 permalink: /alevel/
 header:
   overlay_color: "#333"
