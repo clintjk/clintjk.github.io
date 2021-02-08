@@ -7,16 +7,16 @@ entries_layout: grid
 classes: wide
 
 feature_row:
-  - image_path: /assets/images/unsplash-gallery-image-1-th.jpg
+  - image_path: /assets/images/maths_thumb.jpg
     alt: "Maths"
     title: "Maths"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "/alevel/physics.md"
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    url: "/alevel/maths"
+  - image_path: /assets/images/physics_thumb.jpg
     alt: "Physics"
     title: "Physics"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "/alevel/maths.md"
+    url: "/alevel/physics"
     btn_label: "Read More"
     btn_class: "btn--inverse"
 
