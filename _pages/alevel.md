@@ -1,6 +1,6 @@
 ---
 title: A-Level
-layout: collection
+layout: splash
 permalink: /alevel/
 collection: alevel
 entries_layout: grid
