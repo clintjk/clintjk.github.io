@@ -6,4 +6,4 @@ collection: alevel
 entries_layout: grid
 classes: wide
 ---
-<p style="text-align: center;">Based on the AQA Specification.</p>
+*Based on the AQA Specification*
