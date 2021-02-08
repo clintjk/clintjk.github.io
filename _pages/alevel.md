@@ -21,3 +21,4 @@ feature_row:
     btn_class: "btn--inverse"
 
 ---
+{% include feature_row %}
