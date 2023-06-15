@@ -1,7 +1,7 @@
 ---
 title: "Learning_how_to_use_Hugo"
 date: 2023-06-15T17:30:57+01:00
-draft: true
+draft: false
 showAuthor : true
 ---
 
