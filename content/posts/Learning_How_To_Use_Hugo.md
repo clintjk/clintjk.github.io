@@ -72,7 +72,7 @@ showAuthor : true
 
 Now all we need to do is update our github repo from our local repo after adding new content:
 
-,,,
+```
 git commit -a -m "Added new post!"
 git push
 ```
