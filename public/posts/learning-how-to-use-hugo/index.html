@@ -1,0 +1,631 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <meta charset="utf-8" />
+  
+    <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="rgb(255,255,255)" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Learning how to use Hugo &middot; Clint K</title>
+    <meta name="title" content="Learning how to use Hugo &middot; Clint K" />
+  
+  <meta name="description" content="I have been trying (and failing) to learn how to create and use a static website to encourage myself to learn new things and write about the various projects I busy myself with. My quest started with a site made using the Jekyll static site generator and its built-in integration with github pages. This worked for a while but since I didn&rsquo;t really research how best to use it and add content, it ended up sitting on GitHub gathering dust." />
+  
+  
+  
+  <link rel="canonical" href="http://clintjk.github.io/posts/learning-how-to-use-hugo/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.a7a271c076257286d30e17baa11cc09f9d9171e55a74721da847a09178fb0f05.css"
+    integrity="sha256-p6JxwHYlcobTDhe6oRzAn52RceVadHIdqEegkXj7DwU="
+  />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.022d0ebc3b46a335eb1c7ef79b7f2de143d7cd5156d433638592ef1ce5f8554e.js" integrity="sha256-Ai0OvDtGozXrHH73m38t4UPXzVFW1DNjhZLvHOX4VU4="></script>
+  
+    
+    
+    
+  
+  
+  
+  
+    
+    <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.84ea74257c78d510b25594590b1aca93c37a6877605bb4b7493b685aac753491.js" integrity="sha256-hOp0JXx41RCyVZRZCxrKk8N6aHdgW7S3STtoWqx1NJE=" data-copy="Copy" data-copied="Copied"></script>
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Learning how to use Hugo" />
+<meta property="og:description" content="I have been trying (and failing) to learn how to create and use a static website to encourage myself to learn new things and write about the various projects I busy myself with. My quest started with a site made using the Jekyll static site generator and its built-in integration with github pages. This worked for a while but since I didn&rsquo;t really research how best to use it and add content, it ended up sitting on GitHub gathering dust." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://clintjk.github.io/posts/learning-how-to-use-hugo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-15T17:30:57+01:00" />
+<meta property="article:modified_time" content="2023-06-15T17:30:57+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Learning how to use Hugo"/>
+<meta name="twitter:description" content="I have been trying (and failing) to learn how to create and use a static website to encourage myself to learn new things and write about the various projects I busy myself with. My quest started with a site made using the Jekyll static site generator and its built-in integration with github pages. This worked for a while but since I didn&rsquo;t really research how best to use it and add content, it ended up sitting on GitHub gathering dust."/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Learning how to use Hugo",
+    "headline": "Learning how to use Hugo",
+    
+    "abstract": "I have been trying (and failing) to learn how to create and use a static website to encourage myself to learn new things and write about the various projects I busy myself with. My quest started with a site made using the Jekyll static site generator and its built-in integration with github pages. This worked for a while but since I didn\u0026rsquo;t really research how best to use it and add content, it ended up sitting on GitHub gathering dust.",
+    "inLanguage": "en",
+    "url" : "http:\/\/clintjk.github.io\/posts\/learning-how-to-use-hugo\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Clint K"
+    },
+    "copyrightYear": "2023",
+    "dateCreated": "2023-06-15T17:30:57\u002b01:00",
+    "datePublished": "2023-06-15T17:30:57\u002b01:00",
+    
+    "dateModified": "2023-06-15T17:30:57\u002b01:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "570"
+  }]
+  </script>
+
+
+  
+  <meta name="author" content="Clint K" />
+  
+    
+      <link href="https://discord.gg" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+  
+  
+</head>
+<body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="font-bold pe-2 text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral print:hidden sm:py-10">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Clint K</a
+  >
+
+      
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col ltr:text-right rtl:text-left sm:flex-row">
+        
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title="Posts"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Blog</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/categories/"
+                  title="Categories"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Categories</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/tags/"
+                  title="Tags"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Tags</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="https://github.com/jpanther/congo"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >GitHub</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                
+                
+                  <button
+                    id="search-button-1"
+                    title="Search (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="relative inline-block align-text-bottom px-1 icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >Clint K</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline ">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/learning-how-to-use-hugo/"
+      >Learning how to use Hugo</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Learning how to use Hugo
+      </h1>
+      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2023-06-15 17:30:57 &#43;0100 BST">15 June 2023</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+      </div>
+      
+    </header>
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 print:hidden lg:sticky lg:top-10">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="-ms-5 block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="-ms-5 border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#editing">Editing</a>
+      <ul>
+        <li><a href="#configuring-sublime-text">Configuring Sublime Text</a></li>
+        <li><a href="#writing-posts">Writing Posts</a></li>
+      </ul>
+    </li>
+    <li><a href="#saving">Saving</a></li>
+    <li><a href="#notes">Notes</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-w-0 min-h-0 max-w-prose grow">
+        <div class="lead !mb-9 text-xl">
+  <p>I have been trying (and failing) to learn how to create and use a static website to encourage myself to learn new things and write about the various projects I busy myself with. My quest started with a site made using the <a
+  href="https://jekyllrb.com/"
+  
+  target="_blank" rel="noreferrer noopener"
+>Jekyll</a> static site generator and its built-in integration with github pages. This worked for a while but since I didn&rsquo;t really research how best to use it and add content, it ended up sitting on GitHub gathering dust.</p>
+<p>Now, a year or so later, I&rsquo;ve started afresh with <a
+  href="https://gohugo.io/"
+  
+  target="_blank" rel="noreferrer noopener"
+>Hugo</a> (think Jekyll but really, really fast) and i&rsquo;ve established a simple yet effective workflow</p>
+
+</div>
+
+<h2 id="editing" class="relative group">Editing <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#editing" aria-label="Anchor">#</a></span></h2>
+<p>There are a multitude of markdown editors to choose from to write content with which makes my choice of using <a
+  href="https://www.sublimetext.com/"
+  
+  target="_blank" rel="noreferrer noopener"
+>Sublime Text</a> a little strange. It is, however, the only editor that I have experience using that has plugins made for by the Hugo community, that makes it very easy to use in conjuction with a Hugo site.</p>
+<h3 id="configuring-sublime-text" class="relative group">Configuring Sublime Text <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#configuring-sublime-text" aria-label="Anchor">#</a></span></h3>
+<p>First <a
+  href="https://www.sublimetext.com/download"
+  
+  target="_blank" rel="noreferrer noopener"
+>install</a> Sublime Text</p>
+<p>Then install Package Control. This is sublime text&rsquo;s own package manager which is used to install plugins.</p>
+<p>Open the command palette: on Mac its <kbd>CMD</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> or on Windows use <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd></p>
+<p>type <code>install package control</code> and press enter</p>
+<p>Once thats done, we can add plugins. I am using <a
+  href="https://github.com/akmittal/Hugofy-sublime"
+  
+  target="_blank" rel="noreferrer noopener"
+>Hugoify</a> which makes adding content and using Hugo easy by bringing hugo commands into Sublime Text. Using shortcuts, we can add content, build, set themes and start a local server.</p>
+<p>Usually this would be done using the command palette and typing <code>install hugoify</code>, however i&rsquo;ve found that the latest version installable from package control has some bugs so instead we&rsquo;ll go to the hugoify github, download the repo and extract it to the packages folder for Sublime Text.</p>
+<p>You can open the folder by typing <code>preferences: browse packages</code> in the command palette. Place the plugin folder here and it&rsquo;s installed.</p>
+<p>Now open the hugoify folder and edit the settings file appropriately. This is what mine looks like:</p>
+<pre tabindex="0"><code>{
+	//root directory for hugo websites use double backwork slash for windows
+	//e.g. windows C:\\Users\\myusername\\
+	//e.g. Linux/Mac /home/myusername
+	&#34;Directory&#34;: &#34;/Users/clint&#34;,
+	&#34;Server&#34;:
+	{
+		&#34;PORT&#34;: 8000, //server port number
+		&#34;THEME_FLAG&#34;: false, //use `--theme` flag
+		&#34;DRAFTS_FLAG&#34;: false, //use `--buildDrafts` flag
+		&#34;THEME&#34;: &#34;bootstrap&#34; //theme used by `--theme` flag
+	},
+	//website name
+	&#34;Sitename&#34;: &#34;clintjk.github.io&#34;  
+}
+</code></pre><p>Once thats done we can type <code>hugoify</code> into the command palette to see what commands we can use.</p>
+<h3 id="writing-posts" class="relative group">Writing Posts <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#writing-posts" aria-label="Anchor">#</a></span></h3>
+<p>Now by running <code>hugoify: new post</code> we can type in the type of post and it&rsquo;s name, and a new post will be generated with the default front matter, which we can then edit. We can change the default front matter set by editing the <code>default.md</code> file found in the archetypes folder of our Hugo site.</p>
+<p>This is what mine looks like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
+</span></span><span class="line"><span class="cl">date: {{ .Date }}
+</span></span><span class="line"><span class="cl">draft: true
+</span></span><span class="line"><span class="cl">showAuthor : true
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></div><h2 id="saving" class="relative group">Saving <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#saving" aria-label="Anchor">#</a></span></h2>
+<p>Now all we need to do is update our github repo from our local repo after adding new content:</p>
+<pre tabindex="0"><code>git commit -a -m &#34;Added new post!&#34;
+git push
+</code></pre><h2 id="notes" class="relative group">Notes <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#notes" aria-label="Anchor">#</a></span></h2>
+<p>Of course this workflow is probably going to change and become more sophisticated - depending on what I want to do with the website. But for now, it is quite efficient</p>
+<p><a
+  href="https://github.com/akmittal/Hugofy-sublime"
+  
+  target="_blank" rel="noreferrer noopener"
+>Hugoify</a> is made by Amit Mittal <a
+  href="https://github.com/akmittal"
+  
+  target="_blank" rel="noreferrer noopener"
+>Amit Mittal</a></p>
+
+      </div>
+    </section>
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  <div class="flex">
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          Author
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          Clint K
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">Bruh</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://discord.gg"
+          target="_blank"
+          aria-label="Discord"
+          rel="me noopener noreferrer"
+          ><span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="/posts/my-first-post/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >My First Post</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2023-06-13 11:34:26 &#43;0100 BST">13 June 2023</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+          <div class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12">
+            <a
+              href="#the-top"
+              class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+              aria-label="Scroll to top"
+              title="Scroll to top"
+            >
+              &uarr;
+            </a>
+          </div>
+        
+      </main><footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            &copy;
+            2023
+            Clint K
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://git.io/hugo-congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    
+    
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="http://clintjk.github.io"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative inline-block align-text-bottom px-1 icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        <span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

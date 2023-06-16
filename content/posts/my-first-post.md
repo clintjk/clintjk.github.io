@@ -2,7 +2,7 @@
 title: "My First Post"
 date: 2023-06-13T11:34:26+01:00
 showAuthor : true
-draft: false
+showTableOfContents : true
 ---
 
 ## Introduction

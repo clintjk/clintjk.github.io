@@ -3,7 +3,7 @@ languageName = "English"
 weight = 1
 
 title = "Clint K"
-# copyright = "Copy, _right?_ :thinking_face:"
+copyright = "© Clint K ( ˘ ³˘) ❤️"
 
 [params]
   isoCode = "en"
@@ -13,7 +13,7 @@ title = "Clint K"
   dateFormat = "2 January 2006"
 
   # mainSections = ["section1", "section2"]
-  # description = "My awesome website"
+  description = "(╯°□°)╯︵ ┻━┻"
 
 [author]
   name = "Clint K"

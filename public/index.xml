@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clint K</title>
+    <link>http://clintjk.github.io/</link>
+    <description>Recent content on Clint K</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 15 Jun 2023 17:30:57 +0100</lastBuildDate><atom:link href="http://clintjk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning how to use Hugo</title>
+      <link>http://clintjk.github.io/posts/learning-how-to-use-hugo/</link>
+      <pubDate>Thu, 15 Jun 2023 17:30:57 +0100</pubDate>
+      
+      <guid>http://clintjk.github.io/posts/learning-how-to-use-hugo/</guid>
+      <description>I have been trying (and failing) to learn how to create and use a static website to encourage myself to learn new things and write about the various projects I busy myself with. My quest started with a site made using the Jekyll static site generator and its built-in integration with github pages. This worked for a while but since I didn&amp;rsquo;t really research how best to use it and add content, it ended up sitting on GitHub gathering dust.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://clintjk.github.io/posts/my-first-post/</link>
+      <pubDate>Tue, 13 Jun 2023 11:34:26 +0100</pubDate>
+      
+      <guid>http://clintjk.github.io/posts/my-first-post/</guid>
+      <description>Introduction # This is bold text, and this is emphasised text.
+Today is the 13th of June and I am procrastinating doing other things to make a static website for the millionth time. This time i&amp;rsquo;m going to use it.</description>
+    </item>
+    
+  </channel>
+</rss>
