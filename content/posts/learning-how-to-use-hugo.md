@@ -21,7 +21,7 @@ First [install](https://www.sublimetext.com/download) Sublime Text
 
 Then install Package Control. This is sublime text's own package manager which is used to install plugins. 
 
-Open the command palette: on Mac its `cmd + shift + p` or on Windows use `ctrl + shift + p`
+Open the command palette: on Mac its <kbd>CMD</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> or on Windows use <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> 
 
 type `install package control` and press enter
 
