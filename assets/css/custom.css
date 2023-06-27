@@ -1,39 +1,17 @@
-/* Increase the default font size */
+/* Increase the default font size
 html {
   font-size: 14pt;
   font-weight: 100;
   font-family: "Nunito", sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+*/
+
+iframe{
+  width: 35vw;
+  height: 60%;
 }
 
-code,
-kbd,
-samp,
-pre {
-  font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.center_scaled {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
-
-.center_scaled_smaller {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
-.max-w-prose {
-  max-width: 72ch;
+@media only screen and (max-width: 768px) {
+  iframe{
+    display: none;
+  }
 }
