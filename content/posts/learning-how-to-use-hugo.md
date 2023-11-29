@@ -4,12 +4,9 @@ date: 2023-06-15T17:30:57+01:00
 draft: false
 showAuthor : true
 ---
+I have been trying to learn how to create and use a static website to encourage myself to learn and write about projects I work on. My quest started with a site made using the [Jekyll](https://jekyllrb.com/) static site generator and its built-in integration with github pages. This worked for a while but since I didn't really research how best to use it and add content, it ended up sitting on GitHub gathering dust.
 
-{{< lead >}}
-I have been trying (and failing) to learn how to create and use a static website to encourage myself to learn new things and write about the various projects I busy myself with. My quest started with a site made using the [Jekyll](https://jekyllrb.com/) static site generator and its built-in integration with github pages. This worked for a while but since I didn't really research how best to use it and add content, it ended up sitting on GitHub gathering dust.
-
-Now, a year or so later, I've started afresh with [Hugo](https://gohugo.io/) (think Jekyll but really, really fast) and i've established a simple yet effective workflow
-{{< /lead >}}
+Now, a year or so later, I've started afresh with [Hugo](https://gohugo.io/) (basically Jekyll but apparently faster) and i've established a simple yet effective workflow
 
 ## Editing
 
